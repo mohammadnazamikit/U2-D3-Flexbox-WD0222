@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox sandbox</title>
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        p {
+            margin-top: unset;
+        }
+
+        .container {
+            max-width: 768px;
+            margin: 0 auto;
+            background-color: aliceblue;
+            min-height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: antiquewhite;
+            flex: 0 1 100px
+        }
+
+        @media (max-width: 299px) {
+            .container {
+                /* align-items: unset; */
+                flex-direction: column;
+                justify-content: flex-end;
+            }
+
+            .box {
+                /* height: unset; */
+
+            }
+        }
+
+        @media (min-width: 300px) and (max-width: 600px) {
+            .container {
+                justify-content: flex-end;
+                align-items: flex-end;
+            }
+        }
+
+
+
+        .clr-aqua {
+            background-color: aqua;
+        }
+
+        .clr-coral {
+            background-color: coral
+        }
+
+        .clr-crimson {
+            background-color: crimson;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- <div class="box">
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ2jxpBDS54Fbb86QghRMsxsdpHRfxxH8M7Q&usqp=CAU">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, corporis rem molestias incidunt esse
+                neque debitis fugit expedita facere enim doloribus ullam blanditiis perspiciatis sunt illo, quae
+                doloremque suscipit dolores!</p>
+        </div>
+        <div class="box">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Logo_NIKE.svg/1200px-Logo_NIKE.svg.png">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, corporis rem molestias incidunt esse
+                neque debitis fugit expedita facere enim doloribus ullam blanditiis perspiciatis sunt illo, quae
+                doloremque suscipit dolores!</p>
+        </div>
+        <div class="box">
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQug_bJjGcNyQqYMAskZPJMJKBFdhLCMKvAiA&usqp=CAU">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, corporis rem molestias incidunt esse
+                neque debitis fugit expedita facere enim doloribus ullam blanditiis perspiciatis sunt illo, quae
+                doloremque suscipit dolores!</p>
+        </div>
+        <div class="box">
+            <img src="https://logos-world.net/wp-content/uploads/2020/05/Fanta-Logo.png">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, corporis rem molestias incidunt esse
+                neque debitis fugit expedita facere enim doloribus ullam blanditiis perspiciatis sunt illo, quae
+                doloremque suscipit dolores!</p>
+        </div> -->
+        <div class="box"></div>
+        <div class="box clr-aqua"></div>
+        <div class="box clr-coral">
+            <img src="https://images.unsplash.com/photo-1653463174213-55e0aabce355?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470"
+                alt="">
+        </div>
+        <div class="box clr-crimson"></div>
+
+        <!-- <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit voluptates eligendi doloribus quo, quisquam
+            ad dolores voluptatum quos, vitae et ducimus repellat at, esse debitis?
+        </p>
+        <p>
+            Dolores officiis optio iste omnis nemo soluta? Mollitia cupiditate officia vel, neque eius voluptas velit
+            distinctio a consequuntur. Aspernatur pariatur vitae ipsa sit! Mollitia dolor amet voluptate dolorem omnis
+            ad.
+            Vero officia fugit assumenda atque repellendus ex eveniet esse aliquid ullam, pariatur modi, iusto
+        </p>
+        <p>
+            doloribus, dolorem adipisci magnam. Iure animi placeat quidem nulla provident fugit soluta hic consequuntur
+            possimus ipsum?
+        </p> -->
+    </div>
+
+    <div style="background-color: black;"></div>
+
+</body>
+
+</html>
